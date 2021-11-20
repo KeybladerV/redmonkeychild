@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedMonkeyGame", "RedMonkeyG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedMonkeyLib", "RedMonkeyLib\RedMonkeyLib.csproj", "{FE52091C-3E1E-40FE-9A6E-1E53399A8381}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentReputation", "StudentReputation\StudentReputation.csproj", "{125FC632-0D3E-4A3E-AB24-062CB0BA18F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{B0990FEF-B9A9-4BC1-902D-F7556F4F0AC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{FE52091C-3E1E-40FE-9A6E-1E53399A8381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE52091C-3E1E-40FE-9A6E-1E53399A8381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE52091C-3E1E-40FE-9A6E-1E53399A8381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125FC632-0D3E-4A3E-AB24-062CB0BA18F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125FC632-0D3E-4A3E-AB24-062CB0BA18F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125FC632-0D3E-4A3E-AB24-062CB0BA18F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125FC632-0D3E-4A3E-AB24-062CB0BA18F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0990FEF-B9A9-4BC1-902D-F7556F4F0AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0990FEF-B9A9-4BC1-902D-F7556F4F0AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0990FEF-B9A9-4BC1-902D-F7556F4F0AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0990FEF-B9A9-4BC1-902D-F7556F4F0AC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
