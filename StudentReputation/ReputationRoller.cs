@@ -1,39 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace StudentReputation
 {
     public static class ReputationRoller
     {
-        public static Student RollLuck(StudentClass studentClass)
+        public static IEnumerable<StudentWin> RollLuck(StudentClass studentClass)
         {
             var studClass = studentClass.Students.Shuffle().ToList();
-            int seed = studClass.Sum(student => student.GetHashCode() + DateTime.Now.GetHashCode());
+            var seed = studClass.Sum(student => (long) student.GetHashCode() + DateTime.Now.GetHashCode());
 
-            Random random = new(seed);
+            Random random = new(unchecked((int) seed));
 
-            Student winner = null;
-            double biggest = double.MinValue;
-            foreach (var student in studClass)
-            {
-                int rep = (int) student.Reputation;
-                if (rep <= 0)
-                    continue;
-                int[] rolls = new int[rep];
-                for (int i = 0; i < rolls.Length; i++)
+            return from student in studClass
+                let rep = (int) student.Reputation
+                where rep > 0
+                select new StudentWin
                 {
-                    rolls[i] = random.Next(0, 100);
-                }
-
-                var avg = rolls.Average();
-                if (biggest < avg)
-                {
-                    biggest = avg;
-                    winner = student;
-                }
-            }
-
-            return winner;
+                    Student = student, Result = Enumerable.Repeat(random.Next(1, 100), rep).Average() * student.Reputation
+                };
         }
+    }
+
+    public struct StudentWin
+    {
+        public Student Student { get; init; }
+        public double Result { get; init; }
     }
 }

@@ -37,10 +37,10 @@ namespace WinFormsApp1
             // 
             // winnerName
             // 
-            this.winnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.winnerName.Location = new System.Drawing.Point(143, 9);
+            this.winnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.winnerName.Location = new System.Drawing.Point(12, 9);
             this.winnerName.Name = "winnerName";
-            this.winnerName.Size = new System.Drawing.Size(511, 250);
+            this.winnerName.Size = new System.Drawing.Size(776, 403);
             this.winnerName.TabIndex = 0;
             this.winnerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
