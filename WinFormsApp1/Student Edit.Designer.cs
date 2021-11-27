@@ -60,7 +60,6 @@ namespace WinFormsApp1
             this.editFirstnameTextBox.Name = "editFirstnameTextBox";
             this.editFirstnameTextBox.Size = new System.Drawing.Size(100, 20);
             this.editFirstnameTextBox.TabIndex = 2;
-            this.editFirstnameTextBox.TextChanged += new System.EventHandler(this.editFirstnameTextBox_TextChanged);
             // 
             // editLastnameTextBox
             // 
@@ -68,7 +67,6 @@ namespace WinFormsApp1
             this.editLastnameTextBox.Name = "editLastnameTextBox";
             this.editLastnameTextBox.Size = new System.Drawing.Size(100, 20);
             this.editLastnameTextBox.TabIndex = 3;
-            this.editLastnameTextBox.TextChanged += new System.EventHandler(this.editLastnameTextBox_TextChanged);
             // 
             // updateStudentButton
             // 

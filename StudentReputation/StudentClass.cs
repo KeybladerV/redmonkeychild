@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace StudentReputation
 {
@@ -7,11 +7,16 @@ namespace StudentReputation
     public class StudentClass
     {
         public string Name { get; set; }
-        public List<Student> Students { get; set; }
+        public BindingList<Student> Students { get; set; }
 
         public StudentClass()
         {
-            Students = new List<Student>();
+            Students = new BindingList<Student>();
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

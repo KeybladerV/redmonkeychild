@@ -16,6 +16,12 @@
     <Compile Update="Student Edit.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ClassEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RepaRoller.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

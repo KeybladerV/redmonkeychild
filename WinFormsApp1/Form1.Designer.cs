@@ -1,11 +1,13 @@
-﻿namespace WinFormsApp1
+﻿using System.ComponentModel;
+
+namespace WinFormsApp1
 {
     partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -43,9 +45,10 @@
             this.firstnameTextBox = new System.Windows.Forms.TextBox();
             this.lastnameTextBox = new System.Windows.Forms.TextBox();
             this.reputationTextBox = new System.Windows.Forms.TextBox();
-            this.addReputationTextBox = new System.Windows.Forms.TextBox();
-            this.editStudentButton = new System.Windows.Forms.Button();
             this.removeStudentButton = new System.Windows.Forms.Button();
+            this.repaRollerButton = new System.Windows.Forms.Button();
+            this.addReputationTextBox = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize) (this.addReputationTextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // loadButton
@@ -174,24 +177,6 @@
             this.reputationTextBox.Size = new System.Drawing.Size(100, 20);
             this.reputationTextBox.TabIndex = 14;
             // 
-            // addReputationTextBox
-            // 
-            this.addReputationTextBox.Location = new System.Drawing.Point(668, 348);
-            this.addReputationTextBox.Name = "addReputationTextBox";
-            this.addReputationTextBox.Size = new System.Drawing.Size(120, 20);
-            this.addReputationTextBox.TabIndex = 15;
-            this.addReputationTextBox.TextChanged += new System.EventHandler(this.addReputationTextBox_TextChanged);
-            // 
-            // editStudentButton
-            // 
-            this.editStudentButton.Location = new System.Drawing.Point(295, 374);
-            this.editStudentButton.Name = "editStudentButton";
-            this.editStudentButton.Size = new System.Drawing.Size(120, 19);
-            this.editStudentButton.TabIndex = 16;
-            this.editStudentButton.Text = "Edit";
-            this.editStudentButton.UseVisualStyleBackColor = true;
-            this.editStudentButton.Click += new System.EventHandler(this.editStudentButton_Click);
-            // 
             // removeStudentButton
             // 
             this.removeStudentButton.Location = new System.Drawing.Point(138, 424);
@@ -202,14 +187,33 @@
             this.removeStudentButton.UseVisualStyleBackColor = true;
             this.removeStudentButton.Click += new System.EventHandler(this.removeStudentButton_Click);
             // 
+            // repaRollerButton
+            // 
+            this.repaRollerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.repaRollerButton.Location = new System.Drawing.Point(367, 144);
+            this.repaRollerButton.Name = "repaRollerButton";
+            this.repaRollerButton.Size = new System.Drawing.Size(338, 122);
+            this.repaRollerButton.TabIndex = 18;
+            this.repaRollerButton.Text = "REPA ROLLER";
+            this.repaRollerButton.UseVisualStyleBackColor = true;
+            this.repaRollerButton.Click += new System.EventHandler(this.repaRollerButton_Click);
+            // 
+            // addReputationTextBox
+            // 
+            this.addReputationTextBox.Location = new System.Drawing.Point(668, 348);
+            this.addReputationTextBox.Minimum = new decimal(new int[] {100, 0, 0, -2147483648});
+            this.addReputationTextBox.Name = "addReputationTextBox";
+            this.addReputationTextBox.Size = new System.Drawing.Size(120, 20);
+            this.addReputationTextBox.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.removeStudentButton);
-            this.Controls.Add(this.editStudentButton);
             this.Controls.Add(this.addReputationTextBox);
+            this.Controls.Add(this.repaRollerButton);
+            this.Controls.Add(this.removeStudentButton);
             this.Controls.Add(this.reputationTextBox);
             this.Controls.Add(this.lastnameTextBox);
             this.Controls.Add(this.firstnameTextBox);
@@ -226,17 +230,20 @@
             this.Controls.Add(this.loadButton);
             this.Name = "Form1";
             this.Text = "Students Repa";
+            ((System.ComponentModel.ISupportInitialize) (this.addReputationTextBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.Button editStudentButton;
+        private System.Windows.Forms.NumericUpDown addReputationTextBox;
+
+        private System.Windows.Forms.Button repaRollerButton;
+
         private System.Windows.Forms.Button removeStudentButton;
 
         private System.Windows.Forms.TextBox firstnameTextBox;
         private System.Windows.Forms.TextBox lastnameTextBox;
         private System.Windows.Forms.TextBox reputationTextBox;
-        private System.Windows.Forms.TextBox addReputationTextBox;
 
         private System.Windows.Forms.Button addReputationButton;
         private System.Windows.Forms.Label lastnameLabel;
